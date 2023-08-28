@@ -75,16 +75,16 @@
                 // Soma os dois números anteriores para obter o próximo número da sequência...
                 $sequence[] = $sequence[$i - 1] + $sequence[$i - 2];
             }
-           //Voilà!
+            //Voilà!
             return $sequence;
         }
         // Retorno
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $numTerms = intval($_POST["numTerms"]);
             $fibonacciSequence = fibonacci($numTerms);
-            echo '<div class="alert alert-secondary" role="alert">';
-            echo '<strong>Sequência de Fibonacci:</strong> ' . implode(", ", $fibonacciSequence);
-            echo '</div>';
+            echo "<div class=\"alert alert-secondary\" role=\"alert\">";
+            echo "Essa é a sequência de Fibonacci tendo como parâmetro <strong>{$_REQUEST["numTerms"]} termos: </strong> " . implode(", ", $fibonacciSequence);
+            echo "</div>";
             $_REQUEST = null;
         }
         ?>
