@@ -91,7 +91,7 @@
     </div>
 
     <footer class="text-center bg-dark text-light py-3">
-        <p class="mb-0"> Desenvolvido por: Manoel Tavares Neto, <strong>
+        <p class="mb-0"> Desenvolvido por: Manoel Tavares NETO, <strong>
                 <\ NetoDEV>🧙‍♂️
 
             </strong></p>
